@@ -1,13 +1,17 @@
+@font-face {
+  font-family: "hero-new";   /*Can be any text*/
+  src: local("hero-new"),
+    url("../src/Assets/Fonts/Hero_New_Light.woff") format("truetype");
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: hero-new, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: hero-new, sans-serif;
 }
+

@@ -1,0 +1,84 @@
+.header{
+
+    width: 100%;
+}
+
+.headerbody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem 2rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.headerleft{
+    display: flex;
+}
+
+.headerleft svg:hover{
+    cursor: pointer;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 5vh;
+}
+
+.menu li{
+    font-weight: 600;
+}
+
+.menu li:hover{
+    color: rgba(40, 35, 74,0.6);
+    cursor: pointer;
+}
+
+.blog{
+    align-self: center;
+    padding-left: 10vh;
+    font-weight: 600;
+}
+
+.blog p:hover{
+    color: rgba(40, 35, 74,0.6);
+    cursor: pointer;
+}
+
+*{
+    color: rgb(40, 35, 74);
+}
+
+.headerright{
+    display: flex;
+    gap: 1vh;
+}
+
+.headerright .anchor{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 1vh;
+    padding: 1vh;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.headerright .github:hover {
+    border-radius: 6px;
+    background-color: rgba(253, 209, 65, 0.2);
+}
+
+.headerright .login:hover{
+    color: rgba(40, 35, 74, 0.5);
+}
+
+.headerright .signup{
+    color: rgb(5, 109, 255);
+}
+
+.headerright .signup:hover{
+    color: rgba(5, 109, 255, 0.5);
+}
