@@ -1,7 +1,10 @@
 @font-face {
-  font-family: "hero-new";   /*Can be any text*/
+  font-family: "hero-new";
   src: local("hero-new"),
-    url("../src/Assets/Fonts/Hero_New_Light.woff") format("truetype");
+    url("../src/Assets/Fonts/Hero\ New\ Regular.woff") format("truetype");
+  /* font-family: "hero-new-normal";
+  src: local("hero-new-normal"),
+    url("../src/Assets/Fonts/Hero_New_Light.woff") format("truetype"); */
 }
 body {
   margin: 0;
