@@ -86,3 +86,28 @@
 .menu {
     padding-left: 3rem;
 }
+.mobileview{
+    display: none;
+}
+
+@media(max-width:767px) {
+    .headerright, .blog, .menu, .img4{
+        display: none;
+    }
+    .mobgit{
+        display: block;
+    }
+    .mobgit a{
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 5px;
+    }
+    .mobileview{
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+    }
+
+  }

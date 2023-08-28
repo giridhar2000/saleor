@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div className='home'>
+      <div className='home centre'>
         <div className='discord'>
           <p>Join Saleor community on Discord</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -39,7 +39,7 @@ export default function Home() {
         <div className='content'>
           <div className='contenthead'>
             <p>#1 e-commerce platform on GitHub</p>
-            <h1>The commerce API that<br /> puts developers first</h1>
+            <h1>The commerce API that puts developers first</h1>
             <span>An open-source, GraphQL-first e-commerce platform delivering<br /> ultra-fast, dynamic and personalized shopping experiences.</span>
           </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
             <p className='start' href='/'>Start building for free</p>
           </div>
 
-          <div>
+          <div className='imgs'>
             <img className='img1' src={img1} alt='img1' />
             <img className='img2' src={img2} alt='img2' />
             <img className='img3' src={img3} alt='img3' />

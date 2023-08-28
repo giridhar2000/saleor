@@ -1,8 +1,16 @@
 .App {
-  text-align: center;
+  /* text-align: center;
   margin-right: auto;
   margin-left: auto;
   width: 70%;
+  padding: 2vh; */
+}
+
+.centre {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70% !important;
   padding: 2vh;
 }
 
@@ -36,8 +44,25 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+@media(max-width:767px) {
+  .App {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    padding: 1vh;
+    padding-inline: 2vh;
+  }
+
+  .centre {
+    text-align: center;
+    width: auto !important;
+    padding: 0;
+  }
+}
