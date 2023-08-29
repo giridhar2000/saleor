@@ -257,6 +257,7 @@ img.img9 {
 }
 
 .headless {
+    position: relative;
     width: 100%;
     height: 100vh;
 }
@@ -360,4 +361,54 @@ img.img9 {
         left: 11%;
         width: 88%;
     }
+}
+
+.headlesstext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.svg1{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.svg2{
+    position: absolute;
+    top: 5%;
+    left: 37%;
+}
+
+.svg3{
+    position: absolute;
+    bottom: 3%;
+    left: 27%;
+}
+
+.himg3{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+}
+
+.himg2{
+    position: absolute;
+    top: 50%;
+    right: 18%;
+}
+
+.himg1{
+    position: absolute;
+    top: 25%;
+    right: 25%;
 }
