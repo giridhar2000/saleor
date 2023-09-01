@@ -1,6 +1,7 @@
 .home {
     margin-top: 0vh;
     padding-top: 0;
+    height: 200vh;
 }
 
 .discord {
@@ -29,8 +30,8 @@
     transform: translateX(10px);
 }
 
-.contenthead {
-    margin: 5vh;
+.move {
+    transform: translateX(50px);
 }
 
 .contenthead p {
@@ -42,6 +43,99 @@
     font-size: 4rem;
     line-height: 1.1;
     margin: 1rem;
+}
+
+.imgs {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    pointer-events: none;
+    height: 90vh;
+}
+
+.map{
+    position: relative;
+}
+
+.mapText{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-shadow: rgb(255, 255, 255) -5px -5px 0px, rgb(255, 255, 255) 0px -5px 0px, rgb(255, 255, 255) 5px -5px 0px, rgb(255, 255, 255) 5px 0px 0px, rgb(255, 255, 255) 5px 5px 0px, rgb(255, 255, 255) 0px 5px 0px, rgb(255, 255, 255) -5px 5px 0px, rgb(255, 255, 255) -5px 0px 0px;
+}
+
+.mapimg{
+    background-color: gray;
+}
+.card{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 28%;
+    background-color: #FFF;
+    border-radius: 2vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card hr{
+    padding: 0;
+    margin: 0;
+}
+
+.cardhead{
+    padding-block: 3vh;
+    font-weight: 600;
+    padding-inline: 3vh;
+    border-bottom: 1px solid #d3d3d361;
+}
+
+.cardbody p{
+    font-size: smaller;
+}
+
+.cardbody{
+    padding: 2vh;
+    padding-inline: 3vh;
+}
+
+.cardbody .collapse{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 1vh;
+    padding-inline: 2vh;
+    
+}
+
+.cardbody .collapse p{
+    color: #056DFF !important;
+}
+
+.warehouses{
+    padding-block: 2vh;
+    display: flex;
+    gap: 2vh;
+}
+
+.warehouses button{
+    background-color: #056DFF;
+    color: white;
+    border-radius: 1vh;
+    border: none;
+    outline: none;
+    padding: 1vh;
+    width: 50%;
+}
+
+
+.scrollpage {
+    height: 170vh !important;
+    position: absolute !important;
+    width: 100%;
 }
 
 .contenthead span {
@@ -182,15 +276,13 @@
     position: absolute;
     top: 40%;
     left: 0;
-    filter: drop-shadow(0px 0px 100px rgba(17, 12, 46, 0.15));
     border-radius: 1vh;
 }
 
 .img2 {
     position: absolute;
-    top: 15%;
+    /* top: 15%; */
     right: 10%;
-    filter: drop-shadow(0px 0px 100px rgba(17, 12, 46, 0.15));
     border-radius: 1vh;
 }
 
@@ -198,13 +290,18 @@
     position: absolute;
     top: 65%;
     right: 6%;
-    filter: drop-shadow(0px 0px 100px rgba(17, 12, 46, 0.15));
     border-radius: 1vh;
 }
 
 .img4 {
     margin-top: 20vh;
-    filter: drop-shadow(0px 0px 100px rgba(17, 12, 46, 0.15));
+    border-radius: 1vh;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 100%);
+    margin-top: 20vh;
     border-radius: 1vh;
 }
 
@@ -216,6 +313,7 @@
     right: 50%;
     transform: translate(-50%, 10px);
     height: 50vh;
+    /* display: none; */
 }
 
 img.img5 {
@@ -260,6 +358,7 @@ img.img9 {
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #EDF5F8;
 }
 
 .example-enter {
@@ -278,6 +377,26 @@ img.img9 {
 .example-leave.example-leave-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
+}
+
+.quote{
+    background-color: #EDF5F8;
+    padding: 10vh;
+    margin: 0rem auto;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.quote p {
+    margin-top: 24vh;
+}
+
+.quoteimg{
+    width: 15%;
+    display: flex;
+    position: absolute;
 }
 
 @media(max-width:767px) {
@@ -363,7 +482,7 @@ img.img9 {
     }
 }
 
-.headlesstext{
+.headlesstext {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,38 +496,99 @@ img.img9 {
     font-size: x-large;
 }
 
-.svg1{
+
+
+.svg1 {
     position: absolute;
     top: 25%;
     left: 25%;
 }
 
-.svg2{
+.svg2 {
     position: absolute;
     top: 5%;
     left: 37%;
 }
 
-.svg3{
+.svg3 {
     position: absolute;
     bottom: 3%;
     left: 27%;
 }
 
-.himg3{
+.himg3 {
     position: absolute;
     top: 50%;
     left: 18%;
 }
 
-.himg2{
+.himg2 {
     position: absolute;
     top: 50%;
     right: 18%;
 }
 
-.himg1{
+.himg1 {
     position: absolute;
     top: 25%;
     right: 25%;
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    .img1 {
+        top: 30vh;
+        left: -25%;
+    }
+
+    .img2 {
+        right: -10%;
+        top: 20vh;
+    }
+
+    .img3 {
+        top: 80vh;
+        right: -15%;
+    }
+
+    .history {
+        width: 75%;
+        left: 50%;
+        right: 50%;
+        top: 29vh;
+        height: 99vh;
+    }
+    .historychild{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        margin: 2rem auto;
+    }
+
+    .discord {
+        margin-left: 7vh;
+        width: fit-content !important;
+    }
+
+    .headless {
+        padding-block: 10vh;
+    }
+
+    .svg1 {
+        top: 20%;
+        left: 15%;
+    }
+
+    .himg1 {
+        top: 25%;
+        right: 15%;
+    }
+
+    .himg2 {
+        top: 60%;
+        right: 15%;
+    }
+    .svg3 {
+        bottom: 0;
+        left: 30%;
+    }    
 }
